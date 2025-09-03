@@ -1,0 +1,14 @@
+.parceiro{
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+.parceiro , h2{
+    margin-bottom: 60px;
+}
+.parceiro , .lista{
+    padding: 0 20px;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    margin: 0 auto;
+}

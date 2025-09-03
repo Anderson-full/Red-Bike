@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikecraft - Bicicletas Elétricas</title>
+    <title>Red Bike - Bicicletas Elétricas</title>
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft."> 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/global/header.css">
+    <link rel="stylesheet" href="./CSS/global/global.css">
+    <link rel="stylesheet" href="./CSS/home/introducao.css">
+    <link rel="stylesheet" href="./CSS/utilidade/tipografia.css">
+    <link rel="stylesheet" href="./CSS/bicicletas/bicicleta-lista.css">
+    <link rel="stylesheet" href="./CSS/home/tecnologia.css">
+    <link rel="stylesheet" href="./CSS/home/parceiro.css">
+    <link rel="stylesheet" href="./CSS/seguro/seguro.css">
+    <link rel="stylesheet" href="./CSS/global/footer.css">
+    <link rel="stylesheet" href="./CSS/termos/termos.css">
 </head>
 
 <body>
-    <header class="header-bg">
+    
+  
+  <header class="header-bg">
         <div class="header">
-        <img src="./img/bikcraft.svg" alt="Bikecraft">
+        <img class="logan" src="./img/BIKE-RED-24-08-2025.png" alt="Redcraft">
         <nav aria-label="primaria">
             <ul class="header-menu">
                 <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -23,5 +34,163 @@
         </div>
     </header>
     
+    
+    <main class="introducao-bg">
+        <div class="introducao">
+            <div class="introducao-conteudo">
+            <h1 class="texto-grande">Bicicletas feitas sob medida.</h1>
+            <p class="texto-medio">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.
+            </p>
+            <a class="botao" href="./bicletas.html">Escolha a sua</a>
+            </div>
+            <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta">
+        </div>
+    </main>
+    
+    
+    <article class="bicicleta-lista">
+        <h2 class="titulo-bike">Escolha a sua.</h2>
+        <ul class="li">
+            <li>
+                <a href="./bicicletas/magic.html">
+                <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta preta">
+                <h3> Magic Migth</h3>
+                <span>R$ 2.499</span>
+                </a>
+            </li>
+             <li>
+                <a href="./bicicletas/nimbus.html">
+                <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta preta">
+                <h3> Nimbus Stark</h3>
+                <span>R$ 4.000</span>
+                </a>
+            </li>
+             <li>
+                <a href="./bicicletas/nebula.html">
+                <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta preta">
+                <h3> Nebula Cosmic</h3>
+                <span>R$ 3.000</span>
+                </a>
+            </li>
+        </ul>
+    </article>
+    
+    
+    <article class="tecnologia">
+  <div class="tecnologia-bg">
+    <div class="tecnologia-conteudo">
+      <span class="title">TECNOLOGIA AVANÇADA</span>
+      <h2>Você escolhe as suas cores e componentes.</h2>
+      <p>
+        Cada Redcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.
+      </p>
+      <a class="link" href="./bicicleta.html">Escolha o modelo</a>
+
+      <div class="tecnologia-item">
+        <img src="./img/icones/eletrica.svg" alt="Ícone Motor Elétrico">
+        <h3>Motor Elétrico</h3>
+        <p>
+          Toda Redcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.
+        </p>
+      </div>
+
+      <div class="tecnologia-item">
+        <img src="./img/icones/rastreador.svg" alt="Ícone Rastreador">
+        <h3>Rastreador</h3>
+        <p>
+          Sabemos o quão preciosa é a sua Redcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.
+        </p>
+      </div>
+    </div>
+    <div class="tecnologia-img">
+      <img src="./img/fotos/tecnologia.jpg" alt="Bicicleta Bikcraft Tecnologia">
+    </div>
+  </div>
+</article>
+
+
+<section class="parceiros" aria-label="Nossos Parceiros">
+  <h2>Nossos parceiros</h2>
+  <ul class="lista">
+    <li><img src="./img/parceiros/caravan.svg" alt="caravan"></li>
+    <li><img src="./img/parceiros/dogs.svg" alt="dogs"></li>
+    <li><img src="./img/parceiros/flexblog.svg" alt="flexblog"></li>
+    <li><img src="./img/parceiros/handel.svg" alt="handel"></li>
+    <li><img src="./img/parceiros/lescone.svg" alt="lescone"></li>
+    <li><img src="./img/parceiros/ranek.svg" alt="ranek"></li>
+    <li><img src="./img/parceiros/surfbot.svg" alt="surfbot"></li>
+    <li><img src="./img/parceiros/wildbeast.svg" alt="wildbeast"></li>
+  </ul>
+</section>
+
+
+<article class="seguros-bg">
+  <h2>Seguros.</h2>
+  <div class="seguro-conteiner">
+    <div class="seguro-item prata">
+      <h3 class="ter">PRATA</h3>
+      <span>R$ 199 <span class="mensalidade">Mensal</span></span>
+      <ul>
+        <li>• Duas trocas por ano</li>
+        <li>• Assistência técnica</li>
+        <li>• Suporte 08h às 18h</li>
+        <li>• Cobertura estadual</li>
+      </ul>
+      <a class="sec" href="/.orcamento.html">Inscreva-se</a>
+    </div>
+    <div class="seguro-item ouro">
+      <h3 class="seg">OURO</h3>
+      <span>R$ 299 <span class="mensalidade">Mensal</span></span>
+      <ul>
+        <li>• Cinco trocas por ano</li>
+        <li>• Assistência especial</li>
+        <li>• Suporte 24h</li>
+        <li>• Cobertura nacional</li>
+        <li>• Desconto em parceiros</li>
+        <li>• Acesso ao Clube Bike Red</li>
+      </ul>
+      <a class="tec" href="/.orcamento.html">Inscreva-se</a>
+    </div>
+  </div>
+</article>
+
+
+<footer class="footer-bg">
+  <div class="footer-container">
+    <div class="footer-logo-contato">
+      <img class="logan" src="./img/BIKE-RED-24-08-2025.png" alt="Bikered">
+
+      <div class="footer-contato">
+        <h4>CONTATO</h4>
+        <ul class="contato">
+          <li>tel:+55(85) 9 9999-9999</li>
+          <li>contato@bikered.com</li>
+          <li>Rua lá em casa, 42 - Júcas</li>
+          <li>Fortaleza - Ce</li>
+        </ul>
+      </div>
+
+      <div class="footer-red">
+        <a href="#"><img src="./img/redes/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./img/redes/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="./img/redes/youtube.svg" alt="Youtube"></a>
+      </div>
+    </div>
+
+    <div class="footer-informacoes">
+      <h4>INFORMAÇÕES</h4>
+      <nav>
+        <ul class="ft">
+          <li><a href="./bicicletas.html" target="_blank">Bicicletas</a></li>
+          <li><a href="./seguros.html" target="_blank">Seguros</a></li>
+          <li><a href="./contato.html" target="_blank">Contato</a></li>
+          <li><a href="./termos.html" target="_blank">Termos e Condições</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <p class="final">Bike Red © Alguns direitos reservados.</p>
+</footer>
 </body>
 </html> 

@@ -1,0 +1,41 @@
+p{
+    color:#868484;
+    font-size: 25px;
+}
+.tecnologia-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+.tecnologia{
+    background-color: black;
+
+}
+h3{
+  font-size: 35px;
+}
+h2{
+  font-size: 45px;
+}
+.tecnologia-item img {
+   filter: invert(64%) sepia(69%) saturate(4613%) hue-rotate(325deg) brightness(102%) contrast(95%);
+}
+.title{
+  font-size: 40px;
+  color: #868484;
+}
+.link {
+  display:inline-block;
+  color: #F7595D;
+  font-size: 25px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.link:hover{
+  color: red;
+}
