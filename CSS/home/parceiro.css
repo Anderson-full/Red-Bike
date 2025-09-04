@@ -1,70 +1,72 @@
-.parceiro {
-  padding-top: 30px;
-  padding-bottom: 120px;
+.parceiros {
+  padding: 80px 20px;
+  background: #f9f9f9; /* fundo cinza claro para destacar */
+  position: relative;
+}
+
+.parceiros h2 {
+  font-size: 2.2rem;
   text-align: center;
+  margin-bottom: 50px;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
 }
-
-.parceiro h2 {
-  margin-bottom: 60px;
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
-}
-
-.lista {
-  padding: 0 20px;
-  max-width: 1400px;
+.parceiros .lista {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 50px;
   align-items: center;
   justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.lista img {
-  max-width: 150px;
+.parceiros .lista img {
+  max-width: 130px;
   height: auto;
-  filter: grayscale(100%);
-  transition: 0.3s ease;
+  display: block;
+  filter: grayscale(100%) brightness(80%);
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
 }
 
-.lista img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05);
+.parceiros .lista img:hover {
+  filter: grayscale(0%) brightness(100%);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .parceiros h2 {
+    font-size: 1.8rem;
+  }
 
-/* Tablet (até 1024px) */
-@media (max-width: 1024px) {
-  .lista {
-    grid-template-columns: repeat(2, 1fr);
+  .parceiros .lista {
     gap: 30px;
   }
 
-  .lista img {
-    max-width: 120px;
-  }
-
-  .parceiro h2 {
-    font-size: 28px;
+  .parceiros .lista img {
+    max-width: 100px;
   }
 }
 
-/* Celular (até 768px) */
-@media (max-width: 768px) {
-  .lista {
-    grid-template-columns: 1fr;
-    gap: 20px;
+@media (max-width: 480px) {
+  .parceiros .lista {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: none; /* Firefox */
   }
 
-  .lista img {
-    max-width: 100px;
+  .parceiros .lista::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
   }
 
-  .parceiro h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
+  .parceiros .lista img {
+    max-width: 90px;
+    flex: 0 0 auto;
   }
 }
