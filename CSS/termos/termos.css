@@ -48,3 +48,50 @@
   font-weight: bold;
   color: #000;
 }
+
+@media (max-width: 1024px) {
+  .titulo-bg h1 {
+    font-size: 1.8rem;
+  }
+
+  .termos-c {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  .termos-c h2 {
+    font-size: 1.3rem;
+  }
+
+  .termos-c p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-bg {
+    padding: 20px 10px;
+  }
+
+  .titulo-bg h1 {
+    font-size: 1.5rem;
+  }
+
+  .titulo-bg p {
+    font-size: 0.8rem;
+  }
+
+  .termos-c {
+    padding: 20px 15px;
+    margin: 15px;
+  }
+
+  .termos-c h2 {
+    font-size: 1.1rem;
+  }
+
+  .termos-c p {
+    font-size: 0.9rem;
+    text-align: left; /* mais legível em telas pequenas */
+  }
+}

@@ -1,76 +1,93 @@
 .seguros-bg {
   background: #141414;
   color: white;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .seguros-bg h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
-
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #f5f5f5;
 }
 
 .seguro-conteiner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .seguro-item {
-  padding: 32px;
-  border-radius: 12px;
+  padding: 40px 30px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .seguro-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 }
+
+/* --- PRATA --- */
 .seguro-item.prata {
-  background: linear-gradient(135deg, #d9d9d9, #a6a6a6);
+  background: linear-gradient(135deg, #e0e0e0, #bdbdbd);
   color: #111;
-  border: 2px solid #bfbfbf;
+  border: 2px solid #ccc;
 }
 
+.seguro-item.prata h3 {
+  color: #333;
+}
+
+/* --- OURO --- */
 .seguro-item.ouro {
-  background: linear-gradient(135deg, #FFD700, #b8860b);
+  background: linear-gradient(135deg, #FFD700, #DAA520);
   color: #111;
-  transform: scale(1.05);
+  border: 2px solid #FFD700;
+  position: relative;
 }
 
-.seguro-item.ouro:hover {
-  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+.seguro-item.ouro::after {
+  content: "MAIS POPULAR";
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #111;
+  color: gold;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
 }
+
+.seguro-item.ouro h3 {
+  color: #8B7500;
+}
+
 .seguro-item h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-.seguro-item.prata h3 {
-  color: #444;
-}
-
-.seguro-item.ouro h3 {
-  color: #b8860b;
-}
-
 .seguro-item span {
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-bottom: 10px;
   display: block;
 }
 
 .mensalidade {
-  color: #555;
-  font-size: 0.9rem;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .seguro-item ul {
@@ -80,12 +97,14 @@
 }
 
 .seguro-item li + li {
-  margin-top: 6px;
+  margin-top: 8px;
 }
+
+/* Botões */
 .sec, .tec {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 8px;
+  display:inline-block;
+  padding: 14px 28px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
@@ -94,26 +113,40 @@
   margin-top: auto;
   cursor: pointer;
 }
-.prata .sec {
-  background: #444;
-  color: #fff;
-  border: 2px solid #333;
-}
 
+/* botão prata */
+.prata .sec {
+  background: #333;
+  color: #fff;
+  border: 2px solid #222;
+}
 .prata .sec:hover {
-  background: #222;
-  border-color: #111;
+  background: #111;
   transform: scale(1.05);
 }
 
+/* botão ouro */
 .ouro .tec {
   background: #111;
   color: gold;
   border: 2px solid gold;
 }
-
 .ouro .tec:hover {
   background: gold;
   color: #111;
   transform: scale(1.05);
+}
+
+/* ================== RESPONSIVO ================== */
+@media (max-width: 768px) {
+  .seguros-bg h2 {
+    font-size: 2rem;
+  }
+  .seguro-item {
+    text-align: center;
+  }
+  .seguro-item ul {
+    padding-left: 0;
+    list-style: none;
+  }
 }

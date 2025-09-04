@@ -49,3 +49,125 @@
 .bicibleta-lista , a:hover h3::before{
     width: 30px;
 }
+
+.bicibleta-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  margin-bottom: 16px;
+}
+
+.titulo-bike {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.bicibleta-lista h2 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.bicibleta-lista ul {
+  display: flex;
+  gap: 50px;
+  padding: 0px 20px 30px 20px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto; /* scroll horizontal em telas menores */
+  scrollbar-width: thin;
+}
+
+.bicibleta-lista li {
+  flex: 0 0 auto;
+  min-width: 300px; /* garante tamanho mínimo em telas pequenas */
+}
+
+.bicibleta-lista a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bicibleta-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.bicibleta-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: #F7595D; 
+  transition: width 0.3s;
+}
+
+.bicibleta-lista a:hover h3::before {
+  width: 30px;
+}
+
+@media (max-width: 1024px) {
+  .titulo-bike {
+    font-size: 50px;
+  }
+
+  .bicibleta-lista h2 {
+    font-size: 45px;
+  }
+
+  .bicibleta-lista ul {
+    gap: 30px;
+  }
+
+  .bicibleta-lista li {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-bike {
+    font-size: 40px;
+  }
+
+  .bicibleta-lista h2 {
+    font-size: 35px;
+  }
+
+  .bicibleta-lista ul {
+    gap: 20px;
+    padding: 0px 10px 20px 10px;
+  }
+
+  .bicibleta-lista li {
+    min-width: 200px;
+  }
+
+  .bicibleta-lista h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-bike {
+    font-size: 28px;
+  }
+
+  .bicibleta-lista h2 {
+    font-size: 25px;
+  }
+
+  .bicibleta-lista ul {
+    gap: 15px;
+  }
+
+  .bicibleta-lista li {
+    min-width: 160px;
+  }
+}

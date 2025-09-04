@@ -34,3 +34,43 @@
 .header-menu li a:hover {
   color: #F7595D; 
 }
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-menu {
+    gap: 25px;
+  }
+
+  .header-menu li a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-bg {
+    padding: 15px 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logan {
+    height: 35px;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header-menu li a {
+    font-size: 25px;
+  }
+}

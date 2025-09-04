@@ -1,0 +1,62 @@
+
+.vantagens {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.vantagens-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vantagens-titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-transform: lowercase;
+}
+
+.vantagens-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+}
+
+.vantagem img {
+  width: 35px;
+  margin-bottom: 15px;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(45%) saturate(4846%) hue-rotate(325deg) brightness(101%) contrast(96%);
+}
+
+.vantagem h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.vantagem p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #aaa;
+  max-width: 300px;
+}
+@media (max-width: 900px) {
+  .vantagens-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  .vantagem p {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .vantagens-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
