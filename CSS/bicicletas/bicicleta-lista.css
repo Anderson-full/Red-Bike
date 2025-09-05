@@ -1,4 +1,3 @@
-/* ===== Estilo base (desktop) ===== */
 .bicicleta-lista {
   padding: 60px 20px 120px;
 }
@@ -74,7 +73,6 @@
   font-weight: bold;
 }
 
-/* ===== Tablet (até 1024px) ===== */
 @media (max-width: 1024px) {
   .titulo-bike {
     font-size: 48px;
@@ -89,7 +87,6 @@
   }
 }
 
-/* ===== Celular médio (até 768px) ===== */
 @media (max-width: 768px) {
   .titulo-bike {
     font-size: 36px;
@@ -109,8 +106,6 @@
     scroll-snap-align: start;
   }
 }
-
-/* ===== Celular pequeno (até 480px) ===== */
 @media (max-width: 480px) {
   .titulo-bike {
     font-size: 28px;
