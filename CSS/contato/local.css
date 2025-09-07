@@ -1,0 +1,12 @@
+.lojas-bg{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.lojas-item{
+    display: flex;
+    gap: 20px;
+    margin-left: 350px;
+}
